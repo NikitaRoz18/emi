@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI & CIBIL Score Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">CIBIL Score Calculator</a></li>
+            <li><a href="emi.html">EMI Calculator</a></li>
+        </ul>
+    </nav>
+
+    <!-- EMI Calculator Section -->
+    <div class="container">
+        <section id="emi-calculator">
+            <h2>EMI Calculator</h2>
+            <form id="emi-form">
+                <label for="principal">Principal Amount:</label>
+                <input type="number" id="principal" placeholder="Enter principal amount" required>
+                
+                <label for="interest-rate">Annual Interest Rate (%):</label>
+                <input type="number" id="interest-rate" placeholder="Enter interest rate" required>
+                
+                <label for="tenure">Tenure (Months):</label>
+                <input type="number" id="tenure" placeholder="Enter tenure in months" required>
+
+                <button type="button" onclick="calculateEmi()">Calculate EMI</button>
+            </form>
+            <div id="emi-result" class="result"></div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

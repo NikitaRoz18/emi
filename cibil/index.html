@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#cibil-calculator">CIBIL Score Calculator</a></li>
+            <li><a href="emi.html">EMI Calculator</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="container">
+        <!-- CIBIL Score Calculator Section -->
+        <section id="cibil-calculator">
+            <h2>CIBIL Score Calculator</h2>
+            <form id="cibil-form">
+                <label for="loan-amount">Loan Amount:</label>
+                <input type="number" id="loan-amount" placeholder="Enter loan amount" required>
+                
+                <label for="balance">Current Balance:</label>
+                <input type="number" id="balance" placeholder="Enter balance" required>
+
+                <button type="button" onclick="calculateCibil()">Calculate CIBIL Score</button>
+            </form>
+            <div id="cibil-result" class="result"></div>
+        </section>
+
+       
+    <script src="index.js"></script>
+</body>
+</html>

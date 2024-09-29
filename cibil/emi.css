@@ -1,0 +1,157 @@
+body, h1, h2, form, button, input, nav, ul, li {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f0f2f5, #ffffff);
+    color: #333;
+    line-height: 1.6;
+  
+        background: linear-gradient(120deg, #f0f2f5, #c8e1f5); /* Light gradient effect */
+        background-attachment: fixed; /* Keeps the background fixed while scrolling */
+        margin: 0;
+        padding: 0;
+    
+}
+
+/* Navbar Styles */
+nav {
+    background: #007bff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #0056b3;
+    border-radius: 25px;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Result Box */
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #e9ecef;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+}
+
+.result h3 {
+    margin: 0 0 10px 0;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.result p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    input, button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    nav ul li a {
+        padding: 8px 15px;
+    }
+}
